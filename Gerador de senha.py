@@ -10,24 +10,28 @@ for i in range(0, 2):
 
 # gerador de letras maísculas
 for i in range(0, 2):
-    letra_maiuscula = random.choice(string.ascii_lowercase)
-    senha.append(letra_maiuscula)
+    letra_minuscula = random.choice(string.ascii_lowercase)
+    senha.append(letra_minuscula)
 
 # gerador de números
 for i in range(0, 2):
-    letra_maiuscula = random.choice(string.digits)
-    senha.append(letra_maiuscula)
+    numeros = random.choice(string.digits)
+    senha.append(numeros)
 
 # gerador de caracteres especiais
 for i in range(0, 2):
-    letra_maiuscula = random.choice(string.punctuation)
-    senha.append(letra_maiuscula)
+    caracteres_especiais = random.choice(string.punctuation)
+    senha.append(caracteres_especiais)
 
 # embaralhar as letras
-print(senha)
+# print(senha)
 random.shuffle(senha)
 senha = "".join(senha)
-print(senha)
+print("")
+print("-" * 20)
+print(f"Sua senha é {senha}")
+print("-" * 20)
+print("")
 
 
 # nome1 = string.ascii_lowercase
